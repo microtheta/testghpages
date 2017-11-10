@@ -2,7 +2,7 @@
   "name": "testghpages",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mahesh-beehively.github.io/testghpages",
+  "homepage": "https://microtheta.github.io/testghpages",
   "dependencies": {
     "gh-pages": "^1.0.0",
     "react": "^16.1.0",
