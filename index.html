@@ -401,19 +401,21 @@
 						<p>
 							Drop me a message for any technical matter or if you've something interesting or funny thing to discuss over a cup of coffee.
 						</p>
-						<form action="https://formsubmit.io/send/mahesh@microtheta.com" method="POST">
+						<form action="https://formsubmit.io/send/d920b423-21ca-47c1-bd65-aac79e3086a0" method="POST">
 							<div class="row">
 								<div class="col-md-6 col-sm-6">
 									<div class="form-group">
-										<input type="text" id="name" class="form-control" required="required" placeholder="Name">
+										<input type="text" name="name" id="name" class="form-control" required="required" placeholder="Name">
 									</div>
 								</div>
 								<div class="col-md-6 col-sm-6">
 									<div class="form-group">
-										<input type="text" id="fromemail" class="form-control" required="required" placeholder="Email address">
+										<input type="text" name="email" id="fromemail" class="form-control" required="required" placeholder="Email address">
 									</div>
 								</div>
 							</div>
+							<input name="_redirect" type="hidden" id="name" value="http://microtheta.com?submitted">
+							<input name="_formsubmit_id" type="text" style="display:none">
 							<div class="row">
 								<div class="col-md-12 col-sm-12">
 									<div class="form-group">
@@ -581,6 +583,9 @@
 				});
 			});
 			$(document).ready(function() {
+				if(window.location.search.includes('submitted')) {
+					$("#success-contact").show();
+				}
 				$("#sendMail").click(function() {
 	                $("#sendMail").attr('disabled', 'disabled');
 	                $("#resp").html( 'Sending ...');
