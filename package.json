@@ -4,10 +4,10 @@
   "private": true,
   "homepage": "http://microtheta.com/",
   "dependencies": {
-    "gh-pages": "^1.0.0",
-    "react": "^16.1.0",
-    "react-dom": "^16.1.0",
-    "react-scripts": "1.0.17"
+    "gh-pages": "^2.0.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-scripts": "2.1.2"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -17,5 +17,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
